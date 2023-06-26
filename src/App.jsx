@@ -10,13 +10,13 @@ function App() {
     <>
       <div>
         {/* <a href="https://vitejs.dev" target="_blank"> */}
-        <img src="https://png.pngtree.com/png-clipart/20230325/original/pngtree-juicy-burgers-with-a-transparent-background-png-image_9002761.png" className="logo" alt="Vite logo" />
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTlwxu5YYTbZG-xWEBdSbHLKxcac_x8wM-dQ&usqp=CAU" className="logo" alt="Vite logo" />
         {/* </a> */}
         {/* <a href="https://react.dev" target="_blank"> */}
-        <img src="https://www.cicis.com/content/images/cicis/Jalapeno%20pizza.png" className="logo react" alt="React logo" />
+        <img src="https://img.freepik.com/premium-vector/delivery-man-protective-mask-delivers-medicine-by-motorbike_208509-465.jpg" className="logo react" alt="React logo" />
         {/* </a> */}
       </div>
-      <h1>Food Delivery System</h1>
+      <h1>Medicine Delivery System</h1>
       {/* <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
