@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bKash Payment Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('bkash.background.png') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .payment-container {
+            max-width: 400px;
+            padding: 30px;
+            background-color: rgba(255, 192, 203, 0.9); /* Pink background */
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            color: #333;
+        }
+
+        .payment-container h2 {
+            margin-bottom: 20px;
+        }
+
+        .input-group {
+            margin-bottom: 15px;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .pay-button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .pay-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="payment-container">
+        <h2>BKash Payment</h2>
+        <div class="input-group">
+            <label for="merchantNo">bKash Number:</label>
+            <div>8801xxxxxxxxx</div>
+        </div>
+        <div class="input-group">
+            <label for="transactionCode">Transaction Code:</label>
+            <input type="text" id="transactionCode" name="transactionCode" placeholder="Enter transaction code">
+        </div>
+        <div class="input-group">
+            <label for="amount">Amount Paid:</label>
+            <input type="text" id="amount" name="amount" placeholder="Enter amount">
+        </div>
+        <button class="pay-button">Submit Payment</button>
+    </div>
+</body>
+</html>
