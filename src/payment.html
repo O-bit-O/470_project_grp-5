@@ -70,51 +70,23 @@
             background-color: #0056b3;
         }
     </style>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-        const paymentOptions = document.querySelectorAll(".payment-option input");
-        const proceedButton = document.querySelector(".pay-button");
-
-        proceedButton.addEventListener("click", function () {
-            let selectedOption = "";
-            paymentOptions.forEach(option => {
-                if (option.checked) {
-                    selectedOption = option.value;
-                }
-            });
-
-            if (selectedOption === "bkash") {
-                window.location.href = "official_bkash_payment_page.html";
-            } else if (selectedOption === "rocket") {
-                window.location.href = "official_rocket_payment_page.html";
-            } else if (selectedOption === "cash") {
-                window.location.href = "payment_info_recorded.html";
-            } else {
-                alert("Please select a payment method.");
-            }
-        });
-    });
-    </script>
 </head>
 <body>
     <div class="payment-container">
         <h2>Select Payment Method</h2>
         <div class="payment-options">
-            <label class="payment-option">
-                <input type="radio" name="paymentMethod" value="bkash">
+            <a class="payment-option" href="official_bkash_payment_page.html">
                 <img src="Bkash.png" alt="bKash">
                 bKash
-            </label>
-            <label class="payment-option">
-                <input type="radio" name="paymentMethod" value="rocket">
+            </a>
+            <a class="payment-option" href="official_rocket_payment_page.html">
                 <img src="Rocket.png" alt="Rocket">
                 Rocket
-            </label>
-            <label class="payment-option">
-                <input type="radio" name="paymentMethod" value="cash">
+            </a>
+            <a class="payment-option" href="payment_info_recorded.html">
                 <img src="cash.png" alt="Cash on Delivery">
                 Cash on Delivery
-            </label>
+            </a>
         </div>
         <button class="pay-button">Proceed to Pay</button>
     </div>
